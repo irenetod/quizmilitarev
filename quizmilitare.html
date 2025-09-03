@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Interattivo - 60 Domande</title>
+  <style>
+    body { font-family: Arial,sans-serif; background:#f8f9fa; margin:22px;}
+    .question-block { border:1.5px solid #9ab; border-radius:8px; background:#fff; padding:19px; margin-bottom:18px;}
+    .question { font-weight:bold; margin-bottom:11px; }
+    .answers { margin-left:0; padding-left:0;}
+    .answer { list-style:none; border: 1.5px solid #bbb; margin-bottom:6px; padding:9px; border-radius:5px; cursor:pointer; background:#f8fafc; transition:.13s;}
+    .answer:hover { background:#d7e8fa;}
+    .answer.correct { background:#b0efc7; border:1.5px solid #259d42!important;}
+    .answer.incorrect { background:#f6bcbc; border:1.5px solid #c82222!important;}
+    .feedback { margin-top:7px; font-weight:bold;}
+    @media (max-width: 700px) {
+      .question-block {padding:10px;}
+      .answer {padding:6px;}
+    }
+  </style>
+</head>
+<body>
+<h2>Quiz Interattivo Militari - 60 Domande</h2>
+<p>Clicca su ciascuna risposta e scopri subito se è corretta.</p>
+<div id="quiz-container"></div>
+<script>
+const questions = [
+  {
+    q: "Quali sono le 4 branche dell’arte militare?",
+    a: ["Organica, Strategica, Tattica, Logistica","Specialistica, Tattica, Strategica, Operativa","Essenziale, Tecnica, Organica, Strategica","Logistica, Strutturale, Operativa, Tattica"]
+  },
+  {
+    q: "Quali sono le risorse della logistica?",
+    a: ["Umane, Materiali, Conoscitive","Materiali, Finanziarie, Amministrative","Tecnologiche, Sanitarie, Umane","Finanziarie, Materiali, Fisiche"]
+  },
+  {
+    q: "Quali sono le funzioni fondamentali della logistica?",
+    a: ["Determinazione dei fabbisogni, Acquisizione, Gestione","Monitor
